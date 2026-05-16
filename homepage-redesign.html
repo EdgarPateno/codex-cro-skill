@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Halden Supply | SecureView 4G Solar Security Camera</title>
+  <meta name="description" content="Protect your property anywhere with SecureView 4G solar security cameras. No Wi‑Fi required, 2K night vision, instant alerts, and secure checkout." />
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --brand: #0ea5e9;
+      --brand-dark: #0284c7;
+      --accent: #16a34a;
+      --danger: #dc2626;
+      --border: #e2e8f0;
+      --shadow: 0 10px 30px rgba(2, 8, 23, 0.08);
+      --radius: 14px;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.5;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+
+    .announcement {
+      background: #082f49;
+      color: #e0f2fe;
+      text-align: center;
+      padding: 10px 14px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 68px;
+    }
+
+    .logo { font-size: 1.2rem; font-weight: 800; letter-spacing: 0.2px; }
+    .nav-cta {
+      background: var(--brand);
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-weight: 700;
+    }
+
+    .hero {
+      padding: 52px 0 30px;
+      background: linear-gradient(180deg, #f0f9ff, #f8fafc 60%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: #0369a1;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.78rem;
+    }
+
+    h1 {
+      margin: 10px 0 10px;
+      font-size: clamp(1.85rem, 4vw, 2.9rem);
+      line-height: 1.15;
+    }
+
+    .sub { color: var(--muted); max-width: 60ch; }
+
+    .cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin: 24px 0 16px; }
+
+    .btn {
+      border: 0;
+      padding: 13px 18px;
+      border-radius: 10px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .btn-primary { background: var(--brand); color: #fff; }
+    .btn-primary:hover { background: var(--brand-dark); }
+    .btn-secondary { background: #e0f2fe; color: #075985; }
+
+    .checklist {
+      display: grid;
+      gap: 6px;
+      color: #0f5132;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-media {
+      min-height: 330px;
+      padding: 20px;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(circle at 20% 20%, #dbeafe 0%, #e0f2fe 40%, #ffffff 100%);
+      text-align: center;
+      color: #334155;
+      font-weight: 600;
+    }
+
+    section { padding: 36px 0; }
+    h2 { margin: 0 0 8px; font-size: clamp(1.4rem, 2vw, 2rem); }
+    .section-sub { margin: 0 0 20px; color: var(--muted); }
+
+    .trust-strip {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .trust-item {
+      text-align: center;
+      padding: 16px;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .product {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .product-media {
+      min-height: 340px;
+      padding: 18px;
+      display: grid;
+      place-items: center;
+      color: #475569;
+      text-align: center;
+      background: #eef6ff;
+    }
+
+    .product-body { padding: 22px; }
+    .price-row { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin: 8px 0 4px; }
+    .price-now { font-size: 1.9rem; font-weight: 800; }
+    .price-was { color: #64748b; text-decoration: line-through; }
+    .save { color: var(--danger); font-weight: 700; }
+
+    ul { padding-left: 20px; margin: 10px 0; }
+
+    .checkout-note {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #334155;
+      background: #f8fafc;
+      border: 1px dashed #cbd5e1;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .padded { padding: 18px; }
+
+    .stars { color: #f59e0b; font-weight: 800; }
+
+    .steps {
+      counter-reset: step;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .step { padding: 18px; }
+    .step h3::before {
+      counter-increment: step;
+      content: counter(step) ". ";
+      color: var(--brand-dark);
+    }
+
+    .comparison table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .comparison th,
+    .comparison td {
+      border-bottom: 1px solid var(--border);
+      padding: 11px;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+
+    .comparison th { background: #f1f5f9; }
+
+    details {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-bottom: 10px;
+    }
+
+    summary { cursor: pointer; font-weight: 700; }
+
+    .final-cta {
+      background: #082f49;
+      color: #e2e8f0;
+      border-radius: var(--radius);
+      padding: 26px;
+      text-align: center;
+    }
+
+    footer {
+      margin-top: 36px;
+      background: #0f172a;
+      color: #cbd5e1;
+      padding: 26px 0;
+      font-size: 0.92rem;
+    }
+
+    .sticky-mobile {
+      display: none;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #ffffff;
+      border-top: 1px solid var(--border);
+      padding: 10px 12px;
+      z-index: 100;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .sticky-mobile .price { font-weight: 800; }
+
+    @media (max-width: 920px) {
+      .hero-grid, .product { grid-template-columns: 1fr; }
+      .trust-strip, .grid-3, .steps { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 620px) {
+      .trust-strip, .grid-3, .steps { grid-template-columns: 1fr; }
+      .sticky-mobile { display: flex; }
+      body { padding-bottom: 70px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="announcement">TODAY ONLY: 50% OFF SecureView + Free Shipping • 30-Day Risk-Free Returns</div>
+
+  <header>
+    <div class="container nav">
+      <div class="logo">Halden Supply</div>
+      <a class="nav-cta" href="#buy">Buy SecureView</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">No Wi‑Fi Required</div>
+          <h1>Protect Your Property Anywhere—No Wi‑Fi Required.</h1>
+          <p class="sub">SecureView uses 4G LTE + solar charging to deliver 24/7 monitoring in remote areas. Get 2K night vision, instant alerts, and full mobile control in minutes.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#buy">Buy SecureView Now — 50% Off</a>
+            <a class="btn btn-secondary" href="#proof">Watch Real Footage</a>
+          </div>
+          <div class="checklist">
+            <div>✅ Free Shipping</div>
+            <div>✅ 30-Day Risk-Free Returns</div>
+            <div>✅ Secure Checkout (Shop Pay, Apple Pay, PayPal)</div>
+          </div>
+        </div>
+        <div class="card hero-media">
+          <div>
+            <p style="margin:0 0 8px; font-size:1.1rem;">Hero Visual Placeholder</p>
+            <p style="margin:0;">Use product-in-context image + app alert screenshot here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container trust-strip">
+        <div class="card trust-item">🚚 Free Shipping</div>
+        <div class="card trust-item">↩️ 30-Day Returns</div>
+        <div class="card trust-item">🛡️ 1-Year Warranty</div>
+        <div class="card trust-item">🔒 Secure Checkout</div>
+      </div>
+    </section>
+
+    <section id="buy">
+      <div class="container product">
+        <div class="card product-media">
+          <div>
+            <p style="margin:0 0 8px; font-size:1.1rem;">Product Media Placeholder</p>
+            <p style="margin:0;">Insert gallery, demo clips, and zoomable product photos.</p>
+          </div>
+        </div>
+
+        <div class="card product-body">
+          <h2 style="margin-top:0;">SecureView 4G Solar Security Camera</h2>
+          <div class="price-row">
+            <span class="price-now">$149.99</span>
+            <span class="price-was">$299.99</span>
+            <span class="save">Save 50% today</span>
+          </div>
+          <ul>
+            <li>No Wi‑Fi needed (4G LTE enabled)</li>
+            <li>2K color night vision</li>
+            <li>360° pan & tilt coverage</li>
+            <li>Solar-powered for off-grid reliability</li>
+            <li>Instant motion alerts to your phone</li>
+          </ul>
+
+          <div class="cta-row">
+            <button class="btn btn-primary">Buy Now</button>
+            <button class="btn btn-secondary">Add to Cart</button>
+          </div>
+
+          <div class="checkout-note">
+            Express checkout: <strong>Shop Pay</strong> • <strong>Apple Pay</strong> • <strong>PayPal</strong><br>
+            30-day returns • 1-year warranty • No recurring subscription charges
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Why Homeowners Choose SecureView</h2>
+        <p class="section-sub">Built for real-world property protection where traditional Wi‑Fi cameras fail.</p>
+        <div class="grid-3">
+          <article class="card padded"><h3>Covers Remote Areas</h3><p>Perfect for gates, barns, ranches, cabins, and lots without Wi‑Fi.</p></article>
+          <article class="card padded"><h3>Prevents Costly Surprises</h3><p>Get instant motion alerts before small issues become expensive problems.</p></article>
+          <article class="card padded"><h3>Installs in Minutes</h3><p>Mount it, connect to 4G, and monitor from your phone.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="proof">
+      <div class="container">
+        <h2>Trusted by Property Owners Across the U.S.</h2>
+        <p class="section-sub"><span class="stars">★★★★★</span> 4.8/5 from 1,200+ verified customers</p>
+        <div class="grid-3">
+          <article class="card padded"><p>“Set this up at our back gate in 20 minutes. We caught movement the first night.”</p><strong>— Daniel R., Texas</strong></article>
+          <article class="card padded"><p>“Finally a camera that works out by our barn where Wi‑Fi never reached.”</p><strong>— Maria L., Colorado</strong></article>
+          <article class="card padded"><p>“Solar keeps it running and app alerts are instant. Exactly what we needed.”</p><strong>— Brian K., Montana</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>How It Works</h2>
+        <div class="steps">
+          <article class="card step"><h3>Mount SecureView</h3><p>Install on a gate, post, wall, or outbuilding in minutes.</p></article>
+          <article class="card step"><h3>Activate 4G + Solar</h3><p>Connect cellular service and let solar maintain daily power.</p></article>
+          <article class="card step"><h3>Monitor from Your Phone</h3><p>Receive motion alerts and view live footage anytime, anywhere.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="comparison">
+      <div class="container">
+        <h2>Why SecureView Beats Alternatives</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>SecureView</th>
+              <th>Wi‑Fi Cameras</th>
+              <th>Trail Cams</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Works without Wi‑Fi</td><td>✅</td><td>❌</td><td>✅</td></tr>
+            <tr><td>Live motion alerts</td><td>✅</td><td>✅</td><td>⚠️ Limited</td></tr>
+            <tr><td>Solar charging</td><td>✅</td><td>⚠️ Optional</td><td>⚠️ Optional</td></tr>
+            <tr><td>360° pan & tilt</td><td>✅</td><td>⚠️ Varies</td><td>❌</td></tr>
+            <tr><td>Setup time</td><td>Fast</td><td>Medium</td><td>Medium</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <details><summary>Do I need Wi‑Fi to use SecureView?</summary><p>No. SecureView is designed for 4G LTE connectivity.</p></details>
+        <details><summary>How does solar charging work?</summary><p>The panel recharges the battery during daylight to support ongoing operation.</p></details>
+        <details><summary>Can I monitor multiple cameras from one phone?</summary><p>Yes, the app supports managing multiple camera feeds.</p></details>
+        <details><summary>How fast is shipping?</summary><p>Standard shipping timelines appear at checkout based on your location.</p></details>
+        <details><summary>What is your return policy?</summary><p>30-day risk-free returns from delivery date.</p></details>
+        <details><summary>Is checkout secure?</summary><p>Yes—payments are processed through encrypted checkout providers.</p></details>
+      </div>
+    </section>
+
+    <section>
+      <div class="container final-cta">
+        <h2 style="margin-top:0; color:#e2e8f0;">Get 24/7 Property Protection Without Wi‑Fi</h2>
+        <p>SecureView is 50% off today with free shipping.</p>
+        <div class="cta-row" style="justify-content:center;">
+          <a class="btn btn-primary" href="#buy">Checkout Now</a>
+          <a class="btn btn-secondary" href="#buy">Add SecureView to Cart</a>
+        </div>
+        <p style="margin: 8px 0 0; font-size: 0.92rem;">30-day risk-free returns • 1-year warranty • secure payment</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <strong>Halden Supply</strong><br>
+      Property security solutions for homes, land, and remote sites.<br>
+      © 2026 Halden Supply. All rights reserved.
+    </div>
+  </footer>
+
+  <div class="sticky-mobile">
+    <div>
+      <div class="price">$149.99</div>
+      <small>50% Off Today</small>
+    </div>
+    <a class="btn btn-primary" href="#buy" style="padding:10px 14px;">Buy Now</a>
+  </div>
+</body>
+</html>
